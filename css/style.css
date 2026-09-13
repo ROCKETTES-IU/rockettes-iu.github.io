@@ -140,13 +140,17 @@ ul { list-style: none; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
-.logo span { color: var(--accent); }
-.logo em { font-style: normal; color: var(--text-muted); font-size: 0.85rem; }
+.logo-mark { width: 38px; height: 38px; flex-shrink: 0; }
+.logo-loc { color: var(--accent); font-size: 0.8em; font-weight: 600; letter-spacing: 0.02em; }
 
 .nav-menu { display: flex; align-items: center; gap: 30px; }
 .nav-link { font-weight: 500; color: var(--text-muted); transition: color 0.15s ease; font-size: 0.97rem; }
@@ -546,4 +550,6 @@ ul { list-style: none; }
   .section { padding: 78px 0; }
   .price-card.featured { transform: none; }
   .wa-float { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+  .logo { font-size: 1rem; gap: 8px; }
+  .logo-mark { width: 32px; height: 32px; }
 }
