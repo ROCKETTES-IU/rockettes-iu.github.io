@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jugos, licuados y desayunos saludables con ingredientes frescos. Arma tu orden por WhatsApp en un minuto.">
+  <title>Disfruta Natural · Comida saludable · Berriozábal, Chiapas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+:root{--bg:#f2f8f2;--surface:#ffffff;--surface-soft:#e7f2e7;--line:#d8eadb;--ink:#1f3c27;--muted:#5f7c67;--teal:#2f9e44;--teal-dark:#23833a;--teal-glow:rgba(47,158,68,0.13);--cyan:#7cc24b;--gradient:linear-gradient(120deg,#2f9e44,#7cc24b);}.btn-primary{background:linear-gradient(135deg,var(--teal),var(--teal-dark));box-shadow:0 12px 30px -10px var(--teal-glow);}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 38px -10px var(--teal-glow);}.hero{background:radial-gradient(620px 340px at 88% -8%,rgba(124,194,75,0.20),transparent 62%),radial-gradient(560px 340px at 2% 108%,rgba(47,158,68,0.16),transparent 62%),var(--bg);}.logo-badge{box-shadow:0 8px 20px -8px var(--teal-glow);}.section-tag{border-color:var(--teal-glow);}.card:hover{border-color:var(--teal-glow);}.price-cta{border-color:var(--teal-glow);}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo" aria-label="Disfruta Natural">
+        <span class="logo-badge">🥗</span>
+        <span class="logo-text">Disfruta<span class="logo-accent">Natural</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#servicios" class="nav-link">Menú</a></li>
+        <li><a href="#precios" class="nav-link">Precios</a></li>
+        <li><a href="#citas" class="nav-link">Pedir ahora</a></li>
+        <li><a href="#citas" class="btn btn-primary btn-sm">Hacer mi pedido</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-badge">Comida saludable · Berriozábal, Chiapas</div>
+      <h1 class="hero-title">Sabor que cuida<br><span class="gradient-text">de tu cuerpo</span></h1>
+      <p class="hero-subtitle">Jugos, licuados y desayunos saludables con ingredientes frescos. Arma tu orden por WhatsApp en un minuto.</p>
+      <div class="hero-actions">
+        <a href="#citas" class="btn btn-primary btn-lg">Hacer mi pedido</a>
+        <a href="#precios" class="btn btn-outline btn-lg">Ver precios</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number">15+</span><span class="stat-label">platillos caseros</span></div>
+        <div class="stat"><span class="stat-number">4.9</span><span class="stat-label">preferidos</span></div>
+        <div class="stat"><span class="stat-number">1,000+</span><span class="stat-label">pedidos atendidos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS / MENÚ -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Menú</span>
+        <h2 class="section-title">Nuestro menú</h2>
+        <p class="section-desc">Platillos hechos al momento, con ingredientes frescos.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card"><div class="card-icon">🥤</div><h3>Jugo verde detox</h3><p>Espinaca, piña y manzana.</p></article>
+        <article class="card"><div class="card-icon">🍌</div><h3>Licuado de plátano</h3><p>Con leche y avena.</p></article>
+        <article class="card"><div class="card-icon">🥗</div><h3>Desayuno saludable</h3><p>Fruta, granola y yogur.</p></article>
+        <article class="card"><div class="card-icon">🥙</div><h3>Ensalada del chef</h3><p>Pollo, queso y aderezo ligero.</p></article>
+        <article class="card"><div class="card-icon">🥪</div><h3>Sándwich integral</h3><p>De pollo o vegetariano.</p></article>
+        <article class="card"><div class="card-icon">🍱</div><h3>Combo completa</h3><p>Jugo + sándwich + fruta.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section class="section section-alt" id="precios">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Precios</span>
+        <h2 class="section-title">Nuestros precios</h2>
+        <p class="section-desc">Precios claros para que pidas sin sorpresas.</p>
+      </div>
+      <div class="price-table">
+        <div class="price-row"><div class="price-info"><span class="price-name">Jugo verde detox</span><span class="price-desc">Espinaca, piña y manzana.</span></div><div class="price-amt"><a class="price-cta" href="#citas">Pedir</a><span class="price-val">$45</span></div></div>
+        <div class="price-row"><div class="price-info"><span class="price-name">Licuado de plátano</span><span class="price-desc">Con leche y avena.</span></div><div class="price-amt"><a class="price-cta" href="#citas">Pedir</a><span class="price-val">$40</span></div></div>
+        <div class="price-row"><div class="price-info"><span class="price-name">Desayuno saludable</span><span class="price-desc">Fruta, granola y yogur.</span></div><div class="price-amt"><a class="price-cta" href="#citas">Pedir</a><span class="price-val">$70</span></div></div>
+        <div class="price-row"><div class="price-info"><span class="price-name">Ensalada del chef</span><span class="price-desc">Pollo, queso y aderezo ligero.</span></div><div class="price-amt"><a class="price-cta" href="#citas">Pedir</a><span class="price-val">$85</span></div></div>
+        <div class="price-row"><div class="price-info"><span class="price-name">Sándwich integral</span><span class="price-desc">De pollo o vegetariano.</span></div><div class="price-amt"><a class="price-cta" href="#citas">Pedir</a><span class="price-val">$60</span></div></div>
+        <div class="price-row"><div class="price-info"><span class="price-name">Combo completa</span><span class="price-desc">Jugo + sándwich + fruta.</span></div><div class="price-amt"><a class="price-cta" href="#citas">Pedir</a><span class="price-val">$120</span></div></div>
+      </div>
+      <p class="price-note">Recoge en el local o pregunta por tu domicilio.</p>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Proceso</span>
+        <h2 class="section-title">Reserva en 3 pasos</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="step-num">01</div><h3>Elige tus platillos</h3><p>Marca lo que quieras del menú.</p></div><div class="step"><div class="step-num">02</div><h3>Confirma día y hora</h3><p>Elige en el calendario cuándo lo necesitas.</p></div><div class="step"><div class="step-num">03</div><h3>Pedido por WhatsApp</h3><p>Nos llega tu pedido listo y te confirmamos al momento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAR / CITAS -->
+  <section class="section section-alt" id="citas">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Reserva en línea</span>
+        <h2 class="section-title">Pide en un minuto</h2>
+        <p class="section-desc">Arma tu pedido, elige día y hora. Te confirmamos por WhatsApp.</p>
+      </div>
+
+      <div class="book-wrap">
+        <div class="book-widget" role="group">
+          <div class="book-step">
+            <h4 class="book-title">1 · Elige tus platillos</h4>
+            <div class="service-grid" id="serviceGrid">
+              <button class="service-chip" data-service="Jugo verde detox" data-price="$45">Jugo verde detox<br><small>$45</small></button>
+              <button class="service-chip" data-service="Licuado de plátano" data-price="$40">Licuado de plátano<br><small>$40</small></button>
+              <button class="service-chip" data-service="Desayuno saludable" data-price="$70">Desayuno saludable<br><small>$70</small></button>
+              <button class="service-chip" data-service="Ensalada del chef" data-price="$85">Ensalada del chef<br><small>$85</small></button>
+              <button class="service-chip" data-service="Sándwich integral" data-price="$60">Sándwich integral<br><small>$60</small></button>
+              <button class="service-chip" data-service="Combo completa" data-price="$120">Combo completa<br><small>$120</small></button>
+            </div>
+          </div>
+
+          <div class="book-step">
+            <h4 class="book-title">2 · Elige el día</h4>
+            <div class="cal-head">
+              <button class="cal-nav" id="calPrev" aria-label="Mes anterior">‹</button>
+              <span class="cal-title" id="calTitle"></span>
+              <button class="cal-nav" id="calNext" aria-label="Mes siguiente">›</button>
+            </div>
+            <div class="cal-week"><span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span></div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+
+          <div class="book-step">
+            <h4 class="book-title">3 · Elige la hora</h4>
+            <div class="slots" id="slots"></div>
+          </div>
+
+          <div class="book-summary" id="summary">Selecciona platillos, día y hora para armar tu pedido.</div>
+
+          <button class="btn btn-primary btn-block btn-lg" id="confirmBtn" disabled>Hacer mi pedido</button>
+          <p class="book-hint">Al confirmar se abre WhatsApp con tu pedido listo.</p>
+        </div>
+
+        <aside class="book-info">
+          <h3 class="book-info-title">Horario y ubicación</h3>
+          <ul class="info-list">
+            <li><span class="info-ic">📅</span><div><strong>Horario</strong><br>Lunes a sábado · 7:30 am – 3:00 pm</div></li><li><span class="info-ic">📍</span><div><strong>Col. San Sebastián</strong><br>Av. Central Oriente 240<br><em><a href="https://www.google.com/maps/search/?api=1&query=Col.%20San%20Sebasti%C3%A1n%2C%20Berrioz%C3%A1bal%2C%20Chiapas" target="_blank" rel="noopener">Abrir en Google Maps</a></em></div></li><li><span class="info-ic">⚡</span><div><strong>Respuesta rápida</strong><br>Confirmación en menos de 1 hora</div></li>
+          </ul>
+          <a id="directWhatsApp" href="https://wa.me/529601427950?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20sus%20jugos%20y%20desayunos." target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">💬 Hablar por WhatsApp</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo"><span class="logo-badge">🥗</span><span class="logo-text">Disfruta<span class="logo-accent">Natural</span></span></span>
+      <p class="footer-note">Comida saludable · Berriozábal, Chiapas · © Disfruta Natural</p>
+      <a id="footerWhatsApp" href="https://wa.me/529601427950?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20sus%20jugos%20y%20desayunos." target="_blank" rel="noopener" class="footer-link">WhatsApp</a>
+    </div>
+  </footer>
+
+  <a id="floatingWhatsApp" href="https://wa.me/529601427950?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20sus%20jugos%20y%20desayunos." target="_blank" rel="noopener" class="wa-float" aria-label="Hablar por WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor" aria-hidden="true">
+      <path d="M16 3a13 13 0 0 0-11.2 19.5L3 29l6.8-1.8A13 13 0 1 0 16 3z" fill="#fff"/>
+      <path d="M16 4.6c6 0 10.9 4.9 10.9 10.9 0 6-4.9 10.9-10.9 10.9-2 0-3.9-.5-5.5-1.5l-.3-.2-3.2.8.9-3-.2-.4A10.7 10.7 0 0 1 5.1 15.5c0-6 4.9-10.9 10.9-10.9z" fill="#25D366"/>
+      <path d="M12.3 10.5c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 4.1 6.1 5.1 3.6 1 3.6.7 4.2.6.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.3-.2-.7-.4-.3-.1-2.1-1-2.4-1.2-.3-.1-.6-.1-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.3-.2-1.5-.7-2.8-1.7-1-.8-1.8-1.9-2-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.3-.4.4-.6.1-.2.1-.4 0-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6z" fill="#fff"/>
+    </svg>
+  </a>
+
+  <script>
+    window.BOOK = { business: 'Disfruta Natural', proposito: 'hacer un pedido en', cta: 'Hacer mi pedido', hint: 'Al confirmar se abre WhatsApp con tu pedido listo.', allowSunday: False, itemLabel: 'Pedido' };
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
