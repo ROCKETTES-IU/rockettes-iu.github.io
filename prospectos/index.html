@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demos por prospecto · SolucionesTech Chiapas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f4f9fb;--surface:#fff;--line:#dfeaf0;--ink:#12314b;--muted:#5c7186;--teal:#0f9d8e;--teal-dark:#0c7d70;--gradient:linear-gradient(120deg,#0f9d8e,#2bc5e3);}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:64px 22px 80px}
+    .wrap{max-width:960px;margin:0 auto}
+    .tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);background:rgba(15,157,142,.13);border:1px solid rgba(15,157,142,.3);padding:6px 16px;border-radius:999px;margin-bottom:18px}
+    h1{font-family:'Poppins',sans-serif;font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.15;margin-bottom:10px}
+    h1 span{background:var(--gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .sub{color:var(--muted);max-width:640px;margin-bottom:44px}
+    h2{font-family:'Poppins',sans-serif;font-size:1.15rem;margin:34px 0 14px;display:flex;align-items:center;gap:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+    a.card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px;text-decoration:none;color:inherit;box-shadow:0 10px 30px -26px rgba(18,60,84,.4);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+    a.card:hover{transform:translateY(-3px);border-color:rgba(15,157,142,.45);box-shadow:0 18px 38px -24px rgba(18,60,84,.45)}
+    .bus{font-weight:700;font-size:1rem}
+    .rubro{color:var(--muted);font-size:.82rem;margin-top:2px}
+    .url{color:var(--teal-dark);font-size:.72rem;word-break:break-all;margin-top:10px;font-weight:600}
+    .pill{display:inline-block;font-size:.68rem;font-weight:700;background:var(--gradient);color:#fff;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+    .footer{margin-top:50px;color:var(--muted);font-size:.85rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="tag">SolucionesTech Chiapas</span>
+    <h1>Demos por <span>prospecto</span></h1>
+    <p class="sub">20 páginas premium personalizadas (nombre, dirección, menú/servicios, precios y colores) con reserva en línea por WhatsApp. Cada demo es tu puerta de entrada para cerrar la venta.</p>
+
+    <h2>🍽️ Comida</h2>
+    <div class="grid">
+      <a class="card" href="gin-seng/"><span class="pill">Restaurante</span><div class="bus">Restaurant Gin Seng</div><div class="rubro">Col. San Sebastián</div><div class="url">/demos/prospectos/gin-seng/</div></a>
+      <a class="card" href="hodah/"><span class="pill">Comida rápida</span><div class="bus">Hamburguesas y Hot Dogs HODAH</div><div class="rubro">Col. San Marcos</div><div class="url">/demos/prospectos/hodah/</div></a>
+      <a class="card" href="tizoncito/"><span class="pill">Cenaduría</span><div class="bus">Cenaduría El Tizoncito</div><div class="rubro">Col. San Marcos</div><div class="url">/demos/prospectos/tizoncito/</div></a>
+      <a class="card" href="taco-chito/"><span class="pill">Taquería</span><div class="bus">Taco Chito</div><div class="rubro">Centro</div><div class="url">/demos/prospectos/taco-chito/</div></a>
+      <a class="card" href="pollos-farrera/"><span class="pill">Pollos asados</span><div class="bus">Pollos Asados Farrera</div><div class="rubro">Col. San Sebastián</div><div class="url">/demos/prospectos/pollos-farrera/</div></a>
+      <a class="card" href="los-chuncos/"><span class="pill">Comida familiar</span><div class="bus">Los Chuncos</div><div class="rubro">Fracc. Pedregal Bugambilias</div><div class="url">/demos/prospectos/los-chuncos/</div></a>
+      <a class="card" href="disfruta-natural/"><span class="pill">Comida saludable</span><div class="bus">Disfruta Natural</div><div class="rubro">Col. San Sebastián</div><div class="url">/demos/prospectos/disfruta-natural/</div></a>
+    </div>
+
+    <h2>🦷 Dentales</h2>
+    <div class="grid">
+      <a class="card" href="dra-jessica-cordero/"><span class="pill">Clínica dental</span><div class="bus">Consultorio Dental Dra. Jessica Cordero</div><div class="rubro">Col. San Miguel</div><div class="url">/demos/prospectos/dra-jessica-cordero/</div></a>
+      <a class="card" href="esmeraldent/"><span class="pill">Clínica dental</span><div class="bus">EsmeralDent</div><div class="rubro">Col. San Marcos</div><div class="url">/demos/prospectos/esmeraldent/</div></a>
+      <a class="card" href="dental-berrio/"><span class="pill">Clínica dental</span><div class="bus">Dental Berrio</div><div class="rubro">Centro</div><div class="url">/demos/prospectos/dental-berrio/</div></a>
+      <a class="card" href="dr-diego-vitte/"><span class="pill">Clínica dental</span><div class="bus">Consultorio Dental Dr. Diego Vitte</div><div class="rubro">Col. San Sebastián</div><div class="url">/demos/prospectos/dr-diego-vitte/</div></a>
+      <a class="card" href="consultorio-dental-centro/"><span class="pill">Clínica dental</span><div class="bus">Consultorio Dental Centro</div><div class="rubro">Centro</div><div class="url">/demos/prospectos/consultorio-dental-centro/</div></a>
+      <a class="card" href="renidet/"><span class="pill">Estudios radiográficos</span><div class="bus">Renidet</div><div class="rubro">Col. Santa Cruz</div><div class="url">/demos/prospectos/renidet/</div></a>
+    </div>
+
+    <h2>🐾 Veterinarias</h2>
+    <div class="grid">
+      <a class="card" href="veterinaria-don-pepe/"><span class="pill">Veterinaria</span><div class="bus">Veterinaria Don Pepe</div><div class="rubro">Centro</div><div class="url">/demos/prospectos/veterinaria-don-pepe/</div></a>
+      <a class="card" href="terrier/"><span class="pill">Veterinaria</span><div class="bus">Terrier</div><div class="rubro">Col. San Sebastián</div><div class="url">/demos/prospectos/terrier/</div></a>
+    </div>
+
+    <h2>🩺 Médicas y profesionales</h2>
+    <div class="grid">
+      <a class="card" href="dra-yazmin-abarca/"><span class="pill">Consultorio médico</span><div class="bus">Dra. Yazmín Abarca Vázquez</div><div class="rubro">Col. La Amistad</div><div class="url">/demos/prospectos/dra-yazmin-abarca/</div></a>
+      <a class="card" href="daniell-center/"><span class="pill">Clínica de vida saludable</span><div class="bus">Daniell Center</div><div class="rubro">Col. Linda Vista</div><div class="url">/demos/prospectos/daniell-center/</div></a>
+      <a class="card" href="quiro-vaquerizo/"><span class="pill">Quiropráctica</span><div class="bus">Quiropráctico Gerardo Vaquerizo</div><div class="rubro">Col. Guadalupe Poniente</div><div class="url">/demos/prospectos/quiro-vaquerizo/</div></a>
+      <a class="card" href="ginecologia-obstetricia/"><span class="pill">Ginecología · Obstetricia</span><div class="bus">Consultorio de Ginecología y Obstetricia</div><div class="rubro">Centro</div><div class="url">/demos/prospectos/ginecologia-obstetricia/</div></a>
+      <a class="card" href="notaria-107/"><span class="pill">Notaría</span><div class="bus">Notaría Pública No. 107</div><div class="rubro">Centro</div><div class="url">/demos/prospectos/notaria-107/</div></a>
+    </div>
+
+    <p class="footer">WhatsApp de las demos <b>529601427950</b> (te llegan a ti). Al vender, se cambia por el del cliente. Generador: <code>demos/templates/generar.ps1</code></p>
+  </div>
+</body>
+</html>
