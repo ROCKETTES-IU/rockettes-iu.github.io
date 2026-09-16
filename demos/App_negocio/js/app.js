@@ -468,9 +468,9 @@
       var items = (o.items || []).map(function (i) { return '<div class="it"><span>' + esc(i.n) + " ×" + i.q + "</span><span>" + fmtMon(i.pr * i.q) + "</span></div>"; }).join("");
       var origen = o.tipo === "pdv" ? "PDV · en tienda" : o.tipo === "externo" ? "WhatsApp / captura" : "Tienda en línea";
       var acciones = "";
-      if (es !== "cancelado" && es !== "entregado") {
-        acciones += '<button class="btn btn-accent btn-sm" data-av="' + o.ref + '">Avanzar →</button>';
-      }
+      acciones += '<select class="btn btn-outline btn-sm st-sel" data-st="' + o.ref + '" title="Cambiar estado">' +
+        Object.keys(ESTADOS).map(function (k) { return '<option value="' + k + '"' + (k === es ? " selected" : "") + ">" + ESTADOS[k] + "</option>"; }).join("") +
+        "</select>";
       acciones += (es !== "entregado" && es !== "cancelado" && !o.pagado) ? '<button class="btn btn-success btn-sm" data-cob="' + o.ref + '">💰 Cobrar</button>' : "";
       acciones += '<a class="btn btn-wa btn-sm" href="' + waHref(msgCliente(o), es === "cancelado" ? o.cliente.tel : o.cliente.tel) + '" target="_blank" rel="noopener">WhatsApp</a>';
       acciones += '<button class="btn btn-outline btn-sm" data-imp="' + o.ref + '">🧾 Imprimir</button>';
@@ -481,13 +481,13 @@
         '<div class="order-items">' + items + "</div>" +
         '<div class="order-actions">' + acciones + "</div></div></div>";
     }).join("") || '<div class="void">Sin resultados 📭</div>';
-    $$("#pedidosList [data-av]").forEach(function (b) {
-      b.addEventListener("click", function () {
-        avanzar(b.getAttribute("data-av"));
-      });
-    });
     $$("#pedidosList [data-cob]").forEach(function (b) {
       b.addEventListener("click", function () { openCobro(b.getAttribute("data-cob")); });
+    });
+    $$("#pedidosList [data-st]").forEach(function (sel) {
+      sel.addEventListener("change", function () {
+        setEstadoPedido(sel.getAttribute("data-st"), sel.value);
+      });
     });
     $$("#pedidosList [data-imp]").forEach(function (b) {
       b.addEventListener("click", function () { printOrder(b.getAttribute("data-imp")); });
@@ -512,16 +512,16 @@
     };
     return t[o.estado] || "Hola " + nom + ", información de tu pedido " + o.ref;
   }
-  function avanzar(ref) {
+  function setEstadoPedido(ref, st) {
     var ords = getOrders();
     var o = ords.filter(function (x) { return x.ref === ref; })[0];
-    if (!o) return;
-    var next = { nuevo: "confirmado", confirmado: "preparando", preparando: "listo", listo: "entregado" };
-    if (next[o.estado]) o.estado = next[o.estado];
+    if (!o || !ESTADOS[st]) return;
+    o.estado = st;
+    if (st === "cancelado") o.pagado = false;
     save(K.ord, ords);
     renderPedidos();
     cntBadges();
-    toast("Estado actualizado: " + ESTADOS[o.estado]);
+    toast("Estado: " + ESTADOS[st]);
   }
   function openCobro(ref) {
     var ords = getOrders();

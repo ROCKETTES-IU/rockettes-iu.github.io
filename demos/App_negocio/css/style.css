@@ -537,6 +537,7 @@ main { padding-top: 61px; min-height: 100vh; }
 .order-items .it { display: flex; justify-content: space-between; gap: 10px; }
 .order-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
 .order-total { font-weight: 700; color: var(--accent); }
+select.st-sel { font-family: var(--font); cursor: pointer; background: var(--surface); min-width: 118px; }
 
 /* ---------- PDV ---------- */
 .pdv-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
